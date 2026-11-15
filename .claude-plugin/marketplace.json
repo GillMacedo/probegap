@@ -1,0 +1,14 @@
+{
+  "name": "probegap-marketplace",
+  "description": "Marketplace for probegap, which checks Kubernetes probes against the servers a Go program really starts.",
+  "owner": {
+    "name": "Giulliano Macedo"
+  },
+  "plugins": [
+    {
+      "name": "probegap",
+      "source": "./plugin",
+      "description": "Find Kubernetes liveness, readiness and startup probes that fail against a Go program: 404 paths, auth-gated health checks, wrong ports, localhost-only servers and HTTP/HTTPS mismatches."
+    }
+  ]
+}
